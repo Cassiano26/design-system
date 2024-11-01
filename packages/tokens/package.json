@@ -1,7 +1,9 @@
 {
   "name": "@ignite-ui/tokens",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
@@ -9,9 +11,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
+    "@ignite-ui/ts-config": "*",
     "tsup": "^8.3.5",
     "typescript": "^5.6.3"
   }
