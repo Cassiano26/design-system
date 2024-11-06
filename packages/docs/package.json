@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "deploy-storybook": "storybook-to-ghpages",
     "dev:vite": "vite",
     "build-tsc": "tsc -b && vite build",
     "lint": "eslint src/**/*.ts* --fix",
@@ -16,6 +17,7 @@
     "@ignite-ui/react": "*",
     "@ignite-ui/tokens": "*",
     "@ignite-ui/ts-config": "*",
+    "@storybook/addon-a11y": "^8.4.2",
     "phosphor-react": "^1.4.1",
     "polished": "^4.3.1",
     "react": "^18.3.1",
@@ -29,6 +31,7 @@
     "@storybook/blocks": "^8.4.1",
     "@storybook/react": "^8.4.1",
     "@storybook/react-vite": "^8.4.1",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/test": "^8.4.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
