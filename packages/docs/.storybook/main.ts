@@ -28,10 +28,11 @@ const config: StorybookConfig = {
  
     if (configType === 'DEVELOPMENT') {
       // Your development configuration goes here
-      config.base = '/design-system/'
+      
     }
     if (configType === 'PRODUCTION') {
       // Your production configuration goes here.
+      config.base = '/design-system/'
     }
     return mergeConfig(config, {
       // Your environment configuration here
