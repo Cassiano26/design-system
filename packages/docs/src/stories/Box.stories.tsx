@@ -5,11 +5,14 @@ export default {
   title: 'Surfaces/Box',
   component: Box,
   args: {
-    children: (
-      <>
-        <Text>Testando o elemnto box</Text>
-      </>
-    ),
+    children: <Text>Testando o elemnto box</Text>,
+  },
+  argTypes: {
+    children: {
+      control: {
+        type: null,
+      },
+    },
   },
 } as Meta<BoxProps>
 

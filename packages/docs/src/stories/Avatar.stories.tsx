@@ -8,6 +8,13 @@ export default {
     src: 'https://github.com/Cassiano26.png',
     alt: 'Cassiano Candido da Silva',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}
