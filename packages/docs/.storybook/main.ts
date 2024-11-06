@@ -23,5 +23,19 @@ const config: StorybookConfig = {
     name: getAbsolutePath("@storybook/react-vite"),
     options: {},
   },
+  async viteFinal(config, { configType }) {
+    const { mergeConfig } = await import('vite');
+ 
+    if (configType === 'DEVELOPMENT') {
+      // Your development configuration goes here
+      config.base = '/design-system/'
+    }
+    if (configType === 'PRODUCTION') {
+      // Your production configuration goes here.
+    }
+    return mergeConfig(config, {
+      // Your environment configuration here
+    });
+  },
 };
 export default config;
